@@ -47,6 +47,8 @@ Nyt kun kaikki on githubissa, poistetaan tämänhetkinen hakemisto, kloonataan s
 	cd harjoitus5
 	sudo salt-call --local state.highstate --file-root .
 
+Tulostus ilman alun []-rivejä.
+
 	local:
 	----------
 	          ID: install_stuff
