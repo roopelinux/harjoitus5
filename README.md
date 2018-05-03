@@ -26,12 +26,25 @@ Valitsin aiheekseni Wordpressin ja siihen tarvittavan ympäristön asentamisen j
 
 ## b) Julkaise raportti MarkDownilla. Jos käytät GitHub:ia, se tekee muotoilun automaattisesti “.md”-päätteisiin dokumentteihin.
 
-Jes.
+Aloitin tehtävän tekemällä tämän repositoryn ja kloonasin sen itselleni aloittaakseni työskentelyn. Kloonaus komennolla
+
+	git clone https://github.com/roopelinux/harjoitus5.git
 
 ## c) Aja oma Salt-tila suoraa git-varastosta. Voit joko tehdä tilan alusta lähtien itse tai forkata sirottimen.
 
-Väsätään nopea sls-tiedosto samaan git varastoon, mihin tehtäväkin tehdään. Nimetään se top.sls, jotta sen voi ajaa komennolla
+Väsätään nopea sls-tiedosto samaan git varastoon, mihin tehtäväkin tehdään. Nimetään se top.sls jotta sen voi ajaa komennolla
 
 	sudo salt-call --local state.highstate --file-root .
 
+Commitataan ja pusketaan kaikki githubiin
 
+	git add . && git commit; git pull && git pull
+
+Nyt kun kaikki on githubissa, poistetaan tämänhetkinen hakemisto, kloonataan se uudelleen ja ajetaan top.sls
+
+	rm -rf harjoitus5
+	git clone https://github.com/roopelinux/harjoitus5.git
+	sudo salt-call --local state.highstate --file-root .
+
+
+	
