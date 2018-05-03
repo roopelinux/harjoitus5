@@ -18,7 +18,7 @@ Käyttämäni tietokoneen speksit on:
 Tehtävissä käytetään Salttia, eli asennetaan se
 
 	sudo apt-get update
-	sudo apt-get install -y salt-master
+	sudo apt-get install -y salt-minion
 
 ## a) Valitse aihe omaksi kurssityöksi ja varaa se kommenttina aikataulusivun perään.
 
