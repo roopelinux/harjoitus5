@@ -28,6 +28,10 @@ Valitsin aiheekseni Wordpressin ja siihen tarvittavan ympäristön asentamisen j
 
 Jes.
 
+## c) Aja oma Salt-tila suoraa git-varastosta. Voit joko tehdä tilan alusta lähtien itse tai forkata sirottimen.
 
+Väsätään nopea sls-tiedosto samaan git varastoon, mihin tehtäväkin tehdään. Nimetään se top.sls, jotta sen voi ajaa komennolla
+
+	sudo salt-call --local state.highstate --file-root .
 
 
