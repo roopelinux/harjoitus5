@@ -24,6 +24,10 @@ Tehtävissä käytetään Salttia, eli asennetaan se
 
 Valitsin aiheekseni Wordpressin ja siihen tarvittavan ympäristön asentamisen ja conffaamisen Saltilla. Tavoitteena saada wordpress pystyyn (ehkä jopa jonkun teeman kanssa) ilman että käyttäjän tarvitsisi ajaa Wordpressin omaa asennusskriptiä käsin.
 
-## b) 
+## b) Julkaise raportti MarkDownilla. Jos käytät GitHub:ia, se tekee muotoilun automaattisesti “.md”-päätteisiin dokumentteihin.
+
+Jes.
+
+
 
 
