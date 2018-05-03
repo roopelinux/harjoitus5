@@ -47,3 +47,36 @@ Nyt kun kaikki on githubissa, poistetaan tämänhetkinen hakemisto, kloonataan s
 	cd harjoitus5
 	sudo salt-call --local state.highstate --file-root .
 
+	local:
+	----------
+	          ID: install_stuff
+	    Function: pkg.installed
+	      Result: True
+	     Comment: The following packages were installed/updated: figlet, cmatrix The following packages were already installed: firefox
+	     Started: 18:29:50.492680
+	    Duration: 6155.315 ms
+	     Changes:   
+	              ----------
+	              cmatrix:
+	                  ----------
+	                  new:
+	                      1.2a-5build2
+	                  old:
+	              figlet:
+	                  ----------
+	                  new:
+	                      2.2.5-2
+	                  old:
+	
+	Summary for local
+	------------
+	Succeeded: 1 (changed=1)
+	Failed:    0
+	------------
+	Total states run:     1
+
+State meni läpi, kokeillaan ohjelmat.
+
+[Linkki albumiin, jossa kuvat testeistä](https://imgur.com/a/pAeih0H)
+
+Kaikki toimii!
