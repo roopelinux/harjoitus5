@@ -22,29 +22,28 @@ Tehtävissä käytetään Salttia, eli asennetaan se
 
 ## a) Valitse aihe omaksi kurssityöksi ja varaa se kommenttina aikataulusivun perään.
 
-Valitsin aiheekseni Wordpressin ja siihen tarvittavan ympäristön asentamisen ja conffaamisen Saltilla. Tavoitteena saada wordpress pystyyn (ehkä jopa jonkun teeman kanssa) ilman että käyttäjän tarvitsisi ajaa Wordpressin omaa asennusskriptiä käsin.
+Valitsin aiheekseni Wordpressin ja siihen tarvittavan ympäristön asentamisen ja conffaamisen Saltilla. Tavoitteena saada Wordpress pystyyn (ehkä jopa jonkun teeman kanssa) ilman että käyttäjän tarvitsisi ajaa Wordpressin omaa asennusskriptiä käsin.
 
 ## b) Julkaise raportti MarkDownilla. Jos käytät GitHub:ia, se tekee muotoilun automaattisesti “.md”-päätteisiin dokumentteihin.
 
-Aloitin tehtävän tekemällä tämän repositoryn ja kloonasin sen itselleni aloittaakseni työskentelyn. Kloonaus komennolla
+Aloitin tehtävän tekemällä tämän repositoryn johon otin valmiiksi mukaan README.md-tiedoston ja kloonasin sen itselleni aloittaakseni työskentelyn. Kloonaus komennolla
 
 	git clone https://github.com/roopelinux/harjoitus5.git
 
 ## c) Aja oma Salt-tila suoraa git-varastosta. Voit joko tehdä tilan alusta lähtien itse tai forkata sirottimen.
 
-Väsätään nopea sls-tiedosto samaan git varastoon, mihin tehtäväkin tehdään. Nimetään se top.sls jotta sen voi ajaa komennolla
+Väsätään nopea install.sls-tiedosto samaan git varastoon, mihin tehtäväkin tehdään. Tehdään myös top.sls jotta koko homman voi ajaa ilman masterin asennusta ja conffausta komennolla
 
 	sudo salt-call --local state.highstate --file-root .
 
 Commitataan ja pusketaan kaikki githubiin
 
-	git add . && git commit; git pull && git pull
+	git add . && git commit; git pull && git push
 
 Nyt kun kaikki on githubissa, poistetaan tämänhetkinen hakemisto, kloonataan se uudelleen ja ajetaan top.sls
 
 	rm -rf harjoitus5
 	git clone https://github.com/roopelinux/harjoitus5.git
+	cd harjoitus5
 	sudo salt-call --local state.highstate --file-root .
 
-
-	
